@@ -391,6 +391,34 @@ footer {
   color: var(--teal);
 }
 
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.contact-table th,
+.contact-table td {
+  padding: 0.85rem 1rem 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-table thead th {
+  color: var(--muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.contact-table tbody th {
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.contact-table a {
+  color: var(--teal);
+}
+
 @media (min-width: 42rem) {
   .site-header {
 	grid-template-columns: auto minmax(0, 1fr);
