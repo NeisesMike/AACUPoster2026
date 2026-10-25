@@ -32,6 +32,7 @@ body {
 
 a {
   color: var(--teal);
+  overflow-wrap: anywhere;
   text-underline-offset: 0.2em;
 }
 
@@ -74,6 +75,7 @@ a:focus-visible {
 
 .site-header nav a {
   display: inline-flex;
+  flex: 0 0 auto;
   min-height: 2.75rem;
   align-items: center;
   padding: 0.5rem 0.65rem;
@@ -198,6 +200,7 @@ h1 {
 }
 
 .case-grid > section {
+  min-width: 0;
   padding: 1.25rem;
   border: 1px solid var(--line);
   border-radius: 0.55rem;
@@ -271,6 +274,7 @@ h1 {
 }
 
 .math-prompt-card {
+  min-width: 0;
   padding: 1.25rem;
   border: 1px solid var(--line);
   border-radius: 0.55rem;
@@ -480,6 +484,7 @@ footer {
 }
 
 .review-card {
+  min-width: 0;
   padding: 1.25rem;
   border: 1px solid var(--line);
   border-radius: 0.55rem;
@@ -578,6 +583,23 @@ footer {
 
 .contact-table a {
   color: var(--teal);
+}
+
+@media (max-width: 36rem) {
+  .reflection-table th,
+  .reflection-table td,
+  .contact-table th,
+  .contact-table td {
+	padding-right: 0.5rem;
+  }
+
+  .contact-table {
+	table-layout: fixed;
+  }
+
+  .contact-table td {
+	overflow-wrap: anywhere;
+  }
 }
 
 @media (min-width: 42rem) {
